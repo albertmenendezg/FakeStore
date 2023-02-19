@@ -29,7 +29,7 @@ final class Uuid
 
     private function ensureValidUuid(string $value): void
     {
-        if (RamseyUuid::isValid($value)) {
+        if (!RamseyUuid::isValid($value)) {
             throw new InvalidUuid($value);
         }
     }

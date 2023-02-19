@@ -11,5 +11,10 @@ doctrine:
             App\Shared\Domain:
                 is_bundle: false
                 type: xml
-                dir: '%kernel.project_dir%/src/Shared/Infrastructure/Doctrine/Mappings'
+                dir: '%kernel.project_dir%/src/Shared/Infrastructure/Doctrine/Mapping'
                 prefix: 'App\Shared\Domain'
+            App\Product\Domain:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/src/Product/Infrastructure/Persistence/Doctrine/Mapping'
+                prefix: 'App\Product\Domain'

@@ -2,3 +2,8 @@ health_check:
     path: /health
     controller: App\Shared\Infrastructure\Controller\HealthCheckGETController
     methods: [GET]
+
+create_product:
+    path: /products
+    controller: App\Product\Infrastructure\Controller\CreateProductPOSTController
+    methods: [POST]
